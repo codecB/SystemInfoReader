@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<style>
+
+
+button,input {
+    -webkit-app-region: no-drag;
+    margin:2px;
+}
+
+body {
+    margin-top:0px;
+    margin-left:0px;
+    margin-right:0px;
+    background-color: lightyellow;
+}
+
+#toolbar {
+    -webkit-app-region: drag;
+    height:24px;
+    /*background-color: dimgray;*/
+    background: linear-gradient(to right, dimgray , white);
+}
+
+
+
+</style>
+    <script  src="../js/main.js"></script>
+</head>
+<body>
+
+<div id="toolbar">
+    <input type="image" src="../img/close-button.png" alt="Close" style="height:20px;width:20px;float:right;"  onclick="close2()">
+    <input type="image" src="../img/minimize-button.png" alt="Minimize" style="height:20px;width:20px;float:right;"  onclick="minimize()">
+</div>
+
+<!--<button type="button" onclick="refresh()">Refresh</button>-->
+
+
+<h3>Memory:</h3>
+<!--<div id="info">loading ...</div>-->
+<div id="graph" style="">
+    <div id="total" style="width:50px;height:200px;background-color: green;margin-left: 10px;position:static;">
+        <div id="free" style="width:50px;height:0px;background-color: black;margin-left: 0px;position:static;"></div>
+    </div>
+
+</div>
+<div id="number" style="clear:both;position:inherit;margin-left: 10px;"></div>
+
+
+
+
+
+
+
+</body>
+</html>
