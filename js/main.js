@@ -46,7 +46,7 @@ function refresh() {
         var cpuPercent = 100*(1-idlePercent);
 
         document.getElementById("cpu_usage").style.height = idlePercent*200 +"px";
-        document.getElementById("cpu_number").innerHTML = cpuPercent.toFixed(2) +" %";
+        document.getElementById("cpu_number").innerHTML = Math.round(cpuPercent) +" %";
     }
 
     oldCPUInfo = newCPUInfo;
