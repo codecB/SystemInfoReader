@@ -16,7 +16,6 @@ function refresh() {
     document.getElementById("free").style.height = percent*200 +"px";
     document.getElementById("number").innerHTML = used.toFixed(2) +" GB";
 
-
     //cpu, calculate the average CPU usage in the past iteration
     newCPUInfo = os.cpus();
 
@@ -40,9 +39,7 @@ function refresh() {
             newIdleCPU += newCPUInfo[i].times.idle;
         }
 
-
         var idlePercent = (newIdleCPU-oldIdleCPU)/(newTotalCPU-oldTotalCPU);
-
         var cpuPercent = 100*(1-idlePercent);
 
         document.getElementById("cpu_usage").style.height = idlePercent*200 +"px";
@@ -50,11 +47,6 @@ function refresh() {
     }
 
     oldCPUInfo = newCPUInfo;
-
-
-
-
-
 }
 
 

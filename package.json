@@ -7,6 +7,7 @@
     "toolbar": false,
     "frame": false,
     "transparent": true,
+    "icon": "./img/icon.png",
     "width": 300,
     "height": 400,
     "position": "center",
