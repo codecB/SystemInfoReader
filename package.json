@@ -1,9 +1,9 @@
 {
-  "name": "nw-demo",
+  "name": "system_info",
   "version": "0.0.1",
   "main": "./html/index.html",
   "window": {
-    "title": "City Mover",
+    "title": "System",
     "toolbar": false,
     "frame": false,
     "transparent": true,
